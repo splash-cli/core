@@ -29,16 +29,5 @@ Unsplash api url
 Type: `Object`
 splash-cli flags
 
-### isMonth.promise(month, { today })
-Returns a promise for a boolean.
-#### month
-Type: `String`
-Month to check
-
-#### today
-Type: `Date`
-Default: `new Date()`
-Date to check
-
 ## License
 MIT © [Federico Vitale](https://federicovitale.me)

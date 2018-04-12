@@ -1,0 +1,9 @@
+!.gitignore
+!.npmignore
+
+# Files
+.DS_Store
+
+# Folders
+node_modules
+build

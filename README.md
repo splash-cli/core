@@ -1,43 +1,33 @@
-# is-month
+# core
 > Check if the current month is equalt to the given month
 
 ## Install
 ```sh
-	$ npm install is-month --save
+	$ npm install @splash-cli/core --save
 
 	#or
 
-	$ yarn add is-month
+	$ yarn add @splash-cli/core
 ```
 
 ## Usage
 ```js
-	import isMonth from 'is-month';
+	import splash from '@splash-cli/core';
 
-	isMonth('april', { today: new Date('2018/04/12') }) //=> true
-	isMonth.promise('april', { today: new Date('2018/04/12') })
-		.then(month => {
-			console.log('We are in April!')
-		})
-		.catch(err => {
-			if (err) {
-				throw err;
-			}
-		})
+	splash(url, flags)
 ```
 
 ## Api
-### isMonth(month, { today })
-Returns a boolean.
+### splash(url, flags)
+Core of splash-cli.
 
-#### month
+#### url
 Type: `String`
-Month to check
+Unsplash api url
 
-#### today
-Type: `Date`
-Default: `new Date()`
-Date to check
+#### flags
+Type: `Object`
+splash-cli flags
 
 ### isMonth.promise(month, { today })
 Returns a promise for a boolean.

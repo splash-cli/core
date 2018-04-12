@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "build/index.js",
   "license": "MIT",
+  "description": "Core of @splash-cli/splash-cli",
+  "author": "Federico Vitale <fedevitale99@gmail.com> (federicovitale.me)",
   "scripts": {
     "build": "babel src -d build",
     "prepublish": "npm run build"
@@ -20,5 +22,6 @@
     "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1"
-  }
+  },
+  "keywords": ["core", "unsplash", "splash", "splash-cli"]
 }

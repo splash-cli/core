@@ -1,6 +1,6 @@
 {
   "name": "@splash-cli/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "build/index.js",
   "license": "MIT",
   "description": "Core of @splash-cli/splash-cli",
@@ -23,5 +23,18 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1"
   },
-  "keywords": ["core", "unsplash", "splash", "splash-cli"]
+  "keywords": [
+    "core",
+    "unsplash",
+    "splash",
+    "splash-cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/splash-cli/core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/splash-cli/core/issues"
+  },
+  "homepage": "https://github.com/splash-cli/core#readme"
 }

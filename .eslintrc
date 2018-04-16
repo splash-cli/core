@@ -1,0 +1,7 @@
+{
+	"extends": "unsplash",
+	"rules": {
+		"no-console": "off",
+		"require-await": "error"
+	}
+}

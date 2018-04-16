@@ -2,8 +2,9 @@ require('babel-polyfill');
 
 import normalize from 'normalize-url';
 import got from 'got';
-import Ora from 'ora';
 import chalk from 'chalk';
+
+import Ora from 'ora';
 
 import isMonth from '@splash-cli/is-month';
 import printBlock from '@splash-cli/print-block';
@@ -11,12 +12,12 @@ import splashError from '@splash-cli/splash-error';
 
 const jparse = JSON.parse;
 const spinner = new Ora({
-	text: `Connecting to UNSPLASH`,
+	text: 'Connecting to UNSPLASH',
 	color: 'yellow',
-	spinner: isMonth('december') ? 'christmas' : 'earth'
+	spinner: isMonth('december') ? 'christmas' : 'earth',
 });
 
-const splash = async (url, {
+export default async (url, {
 	quiet
 }) => {
 	url = normalize(url);
@@ -36,6 +37,7 @@ const splash = async (url, {
 			statusCode,
 			statusMessage
 		} = await got(url);
+
 		const photo = jparse(body);
 
 		spinner.text = 'Connected';
@@ -53,6 +55,4 @@ const splash = async (url, {
 		splashError(err);
 		return err;
 	}
-};
-
-module.exports = splash;
+}

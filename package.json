@@ -1,13 +1,13 @@
 {
   "name": "@splash-cli/core",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "build/index.js",
   "license": "MIT",
   "description": "Core of @splash-cli/splash-cli",
   "author": "Federico Vitale <fedevitale99@gmail.com> (federicovitale.me)",
   "scripts": {
     "build": "babel src -d build",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "dependencies": {
     "@splash-cli/is-month": "latest",
